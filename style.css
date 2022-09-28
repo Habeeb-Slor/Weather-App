@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+my_bodi{
+  background-image: url(Img/sunny-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+#weather-forecast{
+  float: right;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 18% 100%, 0 51%);
+  height: 100vh;
+  text-align: center;
+  padding: 1.2rem;
+}
+#forcast-top{
+  float: right;
+}
+#forcast-top input{
+  background: transparent;
+  font-family: cursive;
+  border: none;
+  outline: none;
+  width: 400px;
+}
+hr{
+  margin-top: 45px;
+  width: 600px;
+}
+.temp{
+  font-size: 5rem;
+}
+.my-body{
+  /* padding: 20px; */
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
+}
+.weather-logo{
+  float: left;
+  display: flex;
+}
+.cast-text{
+  height: 30vh;
+}
+.coordinates{
+  margin-top: 530px;
+  display: grid;
+  grid-template-columns: auto auto;
+  float: left;
+  margin-left: -350px;
+}
+#gust{
+  margin-top: -200px;
+}
+small{
+  color: darkslategray;
+}
